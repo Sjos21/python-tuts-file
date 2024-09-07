@@ -1,0 +1,5 @@
+Python is awesome
+python
+django
+drf
+django is for webddjango is for webddjango is for webd

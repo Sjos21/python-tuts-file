@@ -1,0 +1,7 @@
+f=open("sample.txt","w+")
+f.write("Python is awesome\n")
+f.writelines(['python\n','django\n','drf\n'])
+print('cursor is at ', f.tell())
+f.seek(0)
+print(f.read())
+f.close()
