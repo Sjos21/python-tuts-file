@@ -274,7 +274,7 @@ from collections import Counter
 # ans=max(counter, key=counter.get)
 # print(ans)
 
-n=int(input())
+# n=int(input())
 # l=[]
 # for i in range(n):
 #     s=input()
@@ -294,17 +294,63 @@ n=int(input())
 # s=set(l)
 # again=reversed(list(s))
 # print(*again)
-arr=list(map(int,input().split()))
-mini=arr[0]
-maxi=arr[0]
-for i in range(n):
-    if (arr[i]<mini):
-        mini=arr[i]
-    if (arr[i]>maxi):
-        maxi=arr[i]
+# arr=list(map(int,input().split()))
+# mini=arr[0]
+# maxi=arr[0]
+# for i in range(n):
+#     if (arr[i]<mini):
+#         mini=arr[i]
+#     if (arr[i]>maxi):
+#         maxi=arr[i]
+#
+# print(maxi,mini)    #this code eliminates our need to convert list into set and then into list once again to have less time complexity and our code is more optimal. Can address the issue of having duplicates in our array.
 
-print(maxi,mini)    #this code eliminates our need to convert list into set and then into list once again to have less time complexity and our code is more optimal. Can address the issue of having duplicates in our array.
+# def ispalindrome():
+#     l=0
+#     r=len(o)-1
+#     while(l<=r):
+#         if(o[l]!=o[r]):
+#             return False
+#         else:
+#             return True
+#
+# o=input()
+# print(ispalindrome())
+#
+# def ispalindrome(n):
+#     ans=0
+#     temp=n
+#     while(n>0):
+#         rem=n%10
+#         ans=(ans*10)+rem
+#         n=n/10
+#
+#     if(ans==n):
+#         return True
+#     else:
+#         return False
+#
+# n=int(input())
+# print(ispalindrome(n))
+
+# n=int(input())
+# temp=n
+# rem=0
+# while(temp>0):
+#     ans=temp%10
+#     rem=(rem*10)+ans
+#     temp=temp//10
+# if rem==n:
+#     print("A palindrome")
+# else:
+#     print("Not a Palindrome")
 
 
-
-
+s1=input()
+s2=input()
+news1=sorted(s1)
+news2=sorted(s2)
+if news1==news2:
+    print("true")
+else:
+    print("false")
