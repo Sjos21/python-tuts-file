@@ -346,11 +346,36 @@ from collections import Counter
 #     print("Not a Palindrome")
 
 
-s1=input()
-s2=input()
-news1=sorted(s1)
-news2=sorted(s2)
-if news1==news2:
-    print("true")
-else:
-    print("false")
+# s1=input()
+# s2=input()
+# news1=sorted(s1)
+# news2=sorted(s2)
+# if news1==news2:
+#     print("true")
+# else:
+#     print("false")
+
+# import math as ma
+# n=int(input())
+# if (n==0 or n==1):
+#     print("Not a prime")
+# for i in range(2, ma.sqrt(n)):
+#     if n%i==0:
+#         print("Not a prime")
+#     else:
+#         print("Is a prime")
+
+def isarmstrong(n):
+    ans=0
+    temp=n
+    while(temp>0):
+        rem=temp%10
+        ans+=(rem**3)
+        temp//=10
+    if ans==n:
+        return True
+    else:
+        return False
+
+n=int(input())
+print(isarmstrong(n))
